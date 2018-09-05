@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	 <script type="text/javascript" src="js/functions.js"></script>
+	 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+
+<div class="jumbotron">
+	<div class="text-center">
+		<h1>Quiz App</h1>
+	</div>
+		<a class="terminate btn btn-warning" href="index.htm">Terminate</a>
+</div>	
+
+<div class="text-center col-sm-12 col-md-12 guidelines">
+	<h4>Read the following guidelines before starting the quiz :</h4>
+	<ol>
+		<li>There is no time limit, take your time and solve them patiently</li>
+		<li>There are three sections in the quiz.</li>
+		<li>The following quiz contains six questions.</li>
+		<li>First section contains two <u>multiple choice</u>, second section contains two <u>fill in the blanks</u>and third section contains two <u>True/false.</u></li>
+		<li>If you click <b>terminate</b> this page will be displayed again</li>
+		<li>Try to answer all the questions</li>
+	<ol>
+		<br>
+	<button class="btn btn-primary" id="run">Start the quiz</button>
+</div>
+
+<div class="quiz_area row">
+	<!-- Question 1 -->
+	<div class="content" id="question1">
+	<div class="error"></div>
+	<div class="sub-section">
+		Section 1 - Multichoice
+	</div>
+	<div class="question-wrap" id="q1">
+	    <h4>Q 1 - Which built-in method sorts the elements of an array? <button class="review btn btn-danger">Review Later</button></h4>
+	</div>
+	<div class="choice-wrap">
+	<table class="choice-table" border=0>
+	    <tr>
+	    <td class="choice_1">
+	    	<div class="radio">
+	    		<label><input type="radio" value="changeOrder(order)" name="mcq-1" required>&nbsp;changeOrder(order)</label>
+	    	</div>
+	    </td>
+	    <td class="choice_2">
+	    	<div class="radio">
+	    		<label><input type="radio" value="order()" name="mcq-1">&nbsp;order()</label>
+		    </div>
+		</td>
+		</tr>
+		<tr>
+		<td class="choice_3">
+			<div class="radio">
+	    		<label><input type="radio" value="sort()" name="mcq-1">&nbsp;sort()</label>
+			</div>
+		</td>
+	    <td class="choice_4">
+	    	<div class="radio">
+	    		<label><input type="radio" value="None of the above" name="mcq-1">&nbsp;None of the above</label>
+	    	</div>
+	    </td>
+		</tr>
+
+	    <tr>
+	    	<td colspan="3">
+	        			<button class="next btn btn-success float-right">Next Question</button>
+	        	</td>
+	        </tr>	
+	    
+	</table>
+	</div>
+	</div>
+
+	<!-- Question 2 -->
+	<div class="content" id="question2">
+	<div class="error"></div>
+	<div class="sub-section">
+		Section 1 - Multichoice
+	</div>
+	
+	<div class="question-wrap" id="q2">
+	    <h4>Q 2 - Which of the following function of Array object sorts the elements of an array? <button class="review btn btn-danger">Review Later</button></h4>
+	</div>
+	<div class="choice-wrap">
+	    <table class="choice-table" border="0">
+	          <tr>
+	    <td class="choice_1">
+	    	<div class="radio">
+	    		<label><input type="radio" value="toSource()" name="mcq-2" required>&nbsp;toSource()</label>
+	    	</div>
+	    </td>
+	    <td class="choice_2">
+	    	<div class="radio">
+	    		<label><input type="radio" value="sort()" name="mcq-2">&nbsp;sort()</label>
+		    </div>
+		</td>
+		</tr>
+		<tr>
+		<td class="choice_3">
+			<div class="radio">
+	    		<label><input type="radio" value="toString()" name="mcq-2">&nbsp;toString()</label>
+			</div>
+		</td>
+	    <td class="choice_4">
+	    	<div class="radio">
+	    		<label><input type="radio" value="unshift()" name="mcq-2">&nbsp;unshift()</label>
+	    	</div>
+	    </td>
+	   </tr>
+	    <tr>
+	        	<td>
+	        		<div class="prev">
+	        			<button class="btn btn-info">Previous Question</button>
+	        		</div>
+	        	</td>
+	        	<td>
+	        		<button class="next btn btn-success float-right">Next Question</button>
+	        	</td>
+	        </tr>
+	    </table>
+	</div>
+	</div>
+
+	<!-- Question 3 -->
+	<div class="content" id="question3">
+	<div class="error"></div>
+	<div class="sub-section">
+		Section 2 - Fill Ups
+	</div>
+	<div class="question-wrap" id="q3">
+	    <h4>Q 3 -  ________  is a bird which live in water as well as land <button class="review btn btn-danger">Review Later</button></h4>
+	</div>
+	<div class="choice-wrap">
+	    <table class="fill-table" border="0">
+	        <tr>
+			<input type="text" name="fill-1" id="fill-1" placeholder="Enter the answer here" required value="">
+	        </tr>
+	        <tr>
+	        	<td>
+	        		<div class="prev">
+	        			<button class="btn btn-info">Previous Question</button>
+	        		</div>
+	        		<button class="next btn btn-success float-right">Next Question</button>
+	        	</td>
+	        </tr>
+	    </table>
+	</div>
+	</div>
+
+	<!-- Question 4 -->
+	<div class="content" id="question4">
+	<div class="error"></div>
+	<div class="sub-section">
+		Section 2 - Fill Ups
+	</div>
+	<div class="question-wrap" id="q4">
+	    <h4>Q 4 - Who is the first person to land on moon ? <button class="review btn btn-danger">Review Later</button></h4>
+	</div>
+	<div class="choice-wrap">
+	<table class="fill-table">
+	     <tr>
+			<input type="text" name="fill-2" id="fill-2" placeholder="Enter the answer here" required value="">
+	        </tr>
+	        <tr>
+	        	<td>
+	        		<div class="prev">
+	        			<button class="btn btn-info">Previous Question</button>
+	        		</div>
+	        		<button class="next btn btn-success float-right">Next Question</button>
+	        	</td>
+	        </tr>
+	</table>
+	</div>
+	</div>
+
+	<!-- Question 5 -->
+	<div class="content" id="question5">
+	<div class="error"></div>
+	<div class="sub-section">
+		Section 3 - True/False
+	</div>
+	<div class="question-wrap" id="q5">
+	    <h4>Is website or a webpage really same ? <button class="review btn btn-danger">Review Later</button></h4>
+	</div>
+	<div class="choice-wrap">
+	<table class="choice-table">
+	    <tr>
+	    	<td>
+	    		<div class="radio">
+			  	<label><input type="radio" name="tf-1" value="True" required>&nbsp;True</label>
+				</div>
+			<div class="radio">			  
+			  <label><input type="radio" name="tf-1" value="False"> &nbsp;False</label>
+			  </div>
+	    	</td>
+	    </tr>
+	    <tr>
+	        	<td>
+	        		<div class="prev">
+	        			<button class="btn btn-info">Previous Question</button>
+	        		</div>
+	        		<button class="next btn btn-success float-right">Next Question</button>
+	        	</td>
+	        </tr>
+	</table>
+	</div>
+	</div>
+
+	<!-- Question 6 -->
+	<div class="content" id="question6">
+	<div class="error"></div>
+	<div class="sub-section">
+		Section 3 - True/False
+	</div>
+	<div class="question-wrap" id="q6">
+	    <h4>Penguin is a bird <button class="review btn btn-danger">Review Later</button></h4>
+	</div>
+	<div class="choice-wrap">
+	<form>
+	<table class="choice-table">
+	    <tr>
+	    	<td>
+	    		<div class="radio"> 
+			  <label><input type="radio" name="tf-2" value="True" required>&nbsp;True</label>
+			</div>
+			<div class="radio">
+			  <label><input type="radio" name="tf-2" value="False">&nbsp;False</label>
+	    		</div>
+	    	</td>
+	    </tr>
+	    <tr>
+	        	<td>
+	        		<div class="prev">
+	        			<button class="btn btn-info">Previous Question</button>
+	        		</div>
+	        		<input class="finish btn btn-default float-right" type="submit" value="Finish Test">
+	        	</td>
+	        </tr>
+	</table>
+	</form>
+	</div>
+	</div>
+	</div>
+
+
+<div id="result" class="text-center col-sm-12 col-sm-12">
+	<ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">See Result</a></li>
+    <li><a data-toggle="pill" href="#menu1">Question 1</a></li>
+    <li><a data-toggle="pill" href="#menu2">Question 2</a></li>
+    <li><a data-toggle="pill" href="#menu3">Question 3</a></li>
+    <li><a data-toggle="pill" href="#menu4">Question 4</a></li>
+    <li><a data-toggle="pill" href="#menu5">Question 5</a></li>
+    <li><a data-toggle="pill" href="#menu6">Question 6</a></li>
+  </ul>
+ 	
+   <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Answer 1</h3>
+      <p>The correct answer is sort()</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Answer 2</h3>
+      <p>The correct answer is sort()</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Answer 3</h3>
+      <p>The correct is Penguin.</p>
+    </div>
+    <div id="menu4" class="tab-pane fade">
+      <h3>Answer 4</h3>
+      <p>The correct answer is Neil Armstrong.</p>
+    </div>
+    <div id="menu5" class="tab-pane fade">
+      <h3>Answer 5</h3>
+      <p>The correct answer is True.</p>
+    </div>
+    <div id="menu6" class="tab-pane fade">
+      <h3>Answer 6</h3>
+      <p>The correct answer is True</p>
+    </div>
+	<div class="text-center">
+	    <a href="index.htm" class="btn btn-primary">Restart Quiz</a>
+  	</div>
+  </div>
+</div>
+
+</body>
+</html>

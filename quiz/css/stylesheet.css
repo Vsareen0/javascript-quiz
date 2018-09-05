@@ -1,0 +1,72 @@
+ol li{
+	text-align: left;
+}
+html{
+	overflow: hidden;
+}
+body{
+overflow: hidden;
+}
+
+.quiz_area,.checked{
+	display: none;
+}
+
+.btn-result{
+float: right;
+}
+
+.content    {
+width: 1024px;
+margin: auto;
+text-align: center;
+padding: 25px;
+display:none;
+}
+
+.choice-wrap    {
+margin-top: 50px;
+}
+
+.choice-table , .fill-table{
+margin: auto;
+width: 650px;
+}
+
+.choice_1 div,.choice_2 div,.choice_3 div,.choice_4 div{
+background: #dedede;
+padding: 20px;
+margin: 15px;
+cursor: pointer;
+border-radius: 20px;
+text-align: center;
+}
+
+.prev{
+	float: left;
+}
+
+.next{
+	float: right;
+}
+
+input[type="text"]{
+	border-top: none;
+	border-right: hidden;
+	border-left: hidden;
+}
+input[type="hover"]:onfocus{
+	border-bottom: 2px solid #2e2e2e;
+}
+
+.terminate,#result{
+	display: none;
+}
+
+.terminate{
+	float: right;
+}
+
+input[type="submit"]{
+	float: right;
+}
